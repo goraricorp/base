@@ -1,4 +1,4 @@
-# gorth-ui
+# @goraricorp/base
 
 Shared React UI library.
 
