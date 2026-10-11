@@ -10,3 +10,6 @@ dist
 
 .npmrc
 
+# dotenv environment variables file
+.env
+.env.test
