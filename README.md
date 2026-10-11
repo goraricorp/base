@@ -5,7 +5,7 @@ Shared React UI library.
 ## Install from GitHub
 
 ```bash
-pnpm add gorth-ui@github:goraria/gorth-ui
+bun add @goraricorp/base
 ```
 
 Or via dependency alias in another project:
@@ -13,7 +13,7 @@ Or via dependency alias in another project:
 ```json
 {
   "dependencies": {
-    "ui": "github:goraria/gorth-ui"
+    "@goraricorp/base": "^1.0.0"
   }
 }
 ```
@@ -23,26 +23,25 @@ Or via dependency alias in another project:
 Import library CSS once in your app entry (for Next.js App Router, put this in `app/layout.tsx`):
 
 ```tsx
-import "gorth-ui/globals.css";
+import "@goraricorp/base/globals.css";
+```
+
+For custom template put this in `app/globals.css` or `styles/globals.css`
+
+```css
+@import "@goraricorp/base/globals.css";
 ```
 
 ```tsx
-import { Button } from 'gorth-ui';
+import { Button } from "@goraricorp/base/default/button";
 
 export function Demo() {
   return <Button>Click me</Button>;
 }
 ```
 
-If you installed with alias `ui`, import from `ui` instead:
-
-```tsx
-import { Button } from 'ui';
-```
-
 ## Development
 
 ```bash
-pnpm install
-pnpm build
+bun install
 ```
